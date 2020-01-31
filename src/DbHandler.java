@@ -152,9 +152,11 @@ public class DbHandler {
 
             FileWithDateWhenItPosted lklklkl =  new FileWithDateWhenItPosted(resultSet.getInt("fileId"), resultSet.getString("filenames"), resultSet.getString("filePostDate"));
 
-            System.out.println(lklklkl);
+            System.out.println(lklklkl.fileName.split(" "));
 
         return null;
+
+
 
         } catch (SQLException e) {
             e.printStackTrace();
